@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+
+    <TextView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:text="Veterinaria"
+        android:textAlignment="center"
+        android:textSize="48sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="129dp" />
+
+    <Button
+        android:id="@+id/b_ingresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Consulta" />
+
+    <Button
+        android:id="@+id/b_informe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="consultar infrome" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_informe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>
